@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terraria Web</title>
 </head>
 <body>
-    <header>
-        <h1>Good evening Nikitin</h1>
+
+    <div id="CONTENEDORDETODO">
+
+
+        <header>
+        <h1>Wiki de Terraria</h1>
         <form action="">
             <input type="text">
         </form>
@@ -16,9 +25,9 @@
         <button></button>
     </header>
     
-<main style="display: flex;">
+<main style="grid-column: 1 / span 3; grid-row: 2; display: grid; grid-template-columns: subgrid; gap: 20px;">
 
-     <div id="menuDelLadoIzquierdo" style="width: 100px; height: 800px; background-color: black; border-radius: 20px;">
+     <div id="menuDelLadoIzquierdo" style="width: 100px; height: 100%; background-color: rgba(14, 13, 13, 0.5); border-radius: 15px; padding: 18px; grid-column: 1; grid-row: 1; display: flex; align-items: center; flex-direction: column; gap: 20px">
         <img src="./Figures/Logoarbolito.png" width="50px" alt="" >
         <img src="./Figures/IconoComunidad.png" width="50px" alt="" >
         <img src="./Figures/iconoChat.png" width="50px" alt="" >
@@ -29,12 +38,25 @@
 
      </div>
 
-     <!--EL CARTEL PRINCIPAL-->
+     
 
-    <article id="contenedorDeLos3Juegos">
-        <div class="juegos">
+<div id="contenedorDelBanner" style="width: 100%; grid-column: 2; grid-row: 1; display: flex; flex-direction: column; gap: 20px;">
+    <img src="./Figures/banner.png" alt="">
+    
+    <div>
+        <h2>Consultar:</h2>
+
+        <!--Carrusel de imagenes-->
+    </div>
+</div>
+        
+
+
+
+    <article id="contenedorDeLos3Juegos" style="background-color: black; padding-left: 25px; grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 20px; padding-left: 0;">
+        <div class="juegos" >
             <img src="./Figures/logoMinecraft.jpg" width="100px"   alt="">
-            <p style="color: white;">Minecraft <strong>java y bedrock pa. <br>Compra uno y te llevas dos</strong></p>
+               <p style="color: white;">Minecraft <strong>java y bedrock pa. <br>Compra uno y te llevas dos</strong></p>
         </div>
         <div class="juegos">
             <img src="./Figures/logoRoblox.jpg" width="100px"  alt="">
@@ -44,43 +66,53 @@
             <img src="./Figures/logoProjectZomboid.png" width="100px"   alt="">
             <p style="color: white;">Project Zomboid <strong>Es muy dificil xD</strong></p>
         </div>
+
+
+
+         <div id="circuloDeHorasJugadas" style="background-color: rgba(14, 13, 13, 0.5); border-radius: 10px; padding: 10px; position: relative; display: flex; flex-direction: column; gap: 15px; min-height: 250px;">
+        <h2 style="margin-bottom: 9px;">Estadisticas</h2>
+            <div id="circulo" style="width: 120px; height: 120px; border-radius: 50%; background-color: rgba(20, 20, 20, 0.9); box-shadow: 0 0 30px 10px #00FF00; position: relative; display: flex; justify-content: center; align-items: center; animation: pulse-shadow 2s infinite alternate ease-in-out;"> <span style="color: white; font-size: 1em;">120 horas</span>
+            </div>
+        <!--EL CIRCULO-->
+        <div id="las3Imagenes" style="background-color: rgba(0,0,0,0); display: flex; justify-content: space-around; width: 100%; margin-top: 15px;">
+
+            <div class="imagenesconLogos " style="width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; transition: all 0.2s ease-out;
+            cursor: pointer;" >
+                <img src="./Figures/zenithConDiv.png" alt="" style="image-rendering: pixelated; ">
+            </div>
+             <div class="imagenesconLogos" style="background-color: rgba(0,0,0,0);">
+                <img src="./Figures/amuletoConDiv.png" alt="" style="image-rendering: pixelated;">
+            </div>
+             <div class="imagenesconLogos" style="background-color: rgba(0,0,0,0);">
+            
+            <img src="./Figures/lunaticoConDiv.png" alt="" style="image-rendering: pixelated;">
+            </div>
+        </div>
+         </div>
+         
+     
+
+
     </article>
 
+    
 
-     <div id="menuSDelLadoderecho">
+     <div id="menuSDelLadoderecho" style="grid-column: 3; grid-row: 1 / span 2; display: flex; flex-direction: column; gap: 20px; padding: 0;">
 
-<div id="primermenuDerecho" style="width: 100px; height: 500px; background-color: black; border-radius: 20px;">
+<div id="primermenuDerecho" style="width: 100%; height: 100%; background-color: rgba(14, 13, 13, 0.5); border-radius: 20px; padding: 15px;">
 
 </div>
-<div id="segundomenuDerecho" style="width: 100px; height: 300px; background-color: rgb(0, 0, 0); border-radius: 20px; margin-top: 37px; ">
+<div id="segundomenuDerecho" style="width: 100%; height: 100%; background-color: rgba(14, 13, 13, 0.5); border-radius: 20px; padding: 15px;">
         
     </div>
-
-
      </div>
 
+     </main>
 
+    </div>
+    
 
-     <div id="circuloDeHorasJugadas">
-        <h2>Estadisticas</h2>
-
-        <!--EL CIRCULO-->
-        <div id="las3Imagenes" style="display: flex; background-color: rgb(78, 75, 75);">
-
-            <div class="imagenesconLogos">
-                <img src="./Figures/zenithConDiv.png" alt="">
-            </div>
-             <div class="imagenesconLogos">
-                <img src="./Figures/amuletoConDiv.png" alt="" >
-            </div>
-             <div class="imagenesconLogos">
-                <img src="./Figures/lunaticoConDiv.png" alt="">
-            </div>
-
-        </div>
-       
-     </div>
-   
+     
     <script src="script.js"></script>
 </body>
 </html>
