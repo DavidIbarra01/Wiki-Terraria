@@ -1,0 +1,23 @@
+header{
+    display: flex;
+}
+
+body{
+    background-color: green;
+    background-image: url("./Figures/wallpaper.png");
+}
+
+.contenedorDeLos3juegos{
+    background-color: black;
+}
+
+.imagenesconLogos>img{
+   width: 170px;
+}
+
+.juegos{
+    background-color: rgb(45, 44, 44);
+    display: flex;
+   
+}
+
